@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "BomCondudor.pt Question Buttons",
+  "version": "1.0",
+  "description": "Adds Next and Prev buttons to Questions browser",
+  "author": {
+    "name": "Basil Semuonov",
+    "email": "basil.semuonov@gmail.com"
+  },
+  "icons": {
+    "16": "icons/logo-short.svg",
+    "32": "icons/logo-short.svg",
+    "48": "icons/logo-short.svg",
+    "128": "icons/logo-short.svg"
+  },
+  "action": {
+    "default_icon": "icons/logo-short.svg"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": [
+        "https://www.bomcondutor.pt/questao/*"
+      ]
+    }
+  ]
+}
